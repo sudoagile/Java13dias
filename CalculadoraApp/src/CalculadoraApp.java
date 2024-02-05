@@ -13,7 +13,7 @@ public class CalculadoraApp {
                 """);
         System.out.println("Operación a realizar? ");
         var operacion = Integer.parseInt(consola.nextLine());
-
+        //Revisar que este dentro de la opciones mencionadas
 
         if(operacion >= 1 && operacion <= 4) {
 
