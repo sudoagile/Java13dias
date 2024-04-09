@@ -5,14 +5,7 @@ public class CalculadoraApp {
         Scanner consola = new Scanner(System.in);
         while (true) {
             System.out.println("**** Aplicacion Calculadora ****");
-            System.out.println("""
-                    1. Suma
-                    2. Resta
-                    3. Multipicación
-                    4. División
-                    5. Salir
-                    """);
-            System.out.println("Operación a realizar? ");
+            maostarMenu();
             try {
                 var operacion = Integer.parseInt(consola.nextLine());
                 //Revisar que este dentro de la opciones mencionadas
@@ -53,9 +46,23 @@ public class CalculadoraApp {
                 }
                 //Imprimimos un salto antes de repetir el ciclo
                 System.out.println();
-            } catch (Exception e){
-                System.out.println("Ocurrio un error: " + e.getMessage() );
+            } catch (Exception e) {
+                System.out.println("Ocurrio un error: " + e.getMessage());
             } //Fin try
         }//Fin While}
     }//Fin Main
+
+    private static void maostarMenu() {
+        System.out.println("""
+                1. Suma
+                2. Resta
+                3. Multipicación
+                4. División
+                5. Salir
+                """);
+
+            System.out.println("Operación a realizar? ");
+}
+
+
 }//Fin clase
