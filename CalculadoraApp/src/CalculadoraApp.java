@@ -11,33 +11,9 @@ public class CalculadoraApp {
                 //Revisar que este dentro de la opciones mencionadas
 
                 if (operacion >= 1 && operacion <= 4) {
+                    //Ejecutamos la operación deseada2
+                ejecutarOperacion(operacion, consola);
 
-                    System.out.println("Proporciona valor operando1: ");
-
-                    var operando1 = Integer.parseInt(consola.nextLine());
-                    System.out.println("Proporciona valor operando2:");
-                    var operando2 = Integer.parseInt(consola.nextLine());
-                    int resultado;
-                    switch (operacion) {
-                        case 1 -> {
-                            resultado = operando1 + operando2;
-                            System.out.println("Resultado Suma: " + resultado);
-                        }
-                        case 2 -> {
-                            resultado = operando1 - operando2;
-                            System.out.println("Resultado Resta: " + resultado);
-                        }
-                        case 3 -> {
-                            resultado = operando1 * operando2;
-                            System.out.println("Resultado Multiplicación: " + resultado);
-                        }
-                        case 4 -> {
-                            resultado = operando1 / operando2;
-                            System.out.println("Resultado División: " + resultado);
-                        }
-                        default -> System.out.println("Opción erronea: " + operacion);
-
-                    }
                 } else if (operacion == 5) {
                     System.out.println("Hasta pronto...");
                     break;
@@ -64,5 +40,33 @@ public class CalculadoraApp {
             System.out.println("Operación a realizar? ");
 }
 
+    public static void ejecutarOperacion(int operacion, Scanner consola) {
+        System.out.println("Proporciona valor operando1: ");
 
+        var operando1 = Double.parseDouble(consola.nextLine());
+        System.out.println("Proporciona valor operando2:");
+        var operando2 = Double.parseDouble(consola.nextLine());
+
+        double resultado;
+        switch (operacion) {
+            case 1 -> {
+                resultado = operando1 + operando2;
+                System.out.println("Resultado Suma: " + resultado);
+            }
+            case 2 -> {
+                resultado = operando1 - operando2;
+                System.out.println("Resultado Resta: " + resultado);
+            }
+            case 3 -> {
+                resultado = operando1 * operando2;
+                System.out.println("Resultado Multiplicación: " + resultado);
+            }
+            case 4 -> {
+                resultado = operando1 / operando2;
+                System.out.println("Resultado División: " + resultado);
+            }
+            default -> System.out.println("Opción erronea: " + operacion);
+
+        }
+    }
 }//Fin clase
