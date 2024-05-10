@@ -1,0 +1,14 @@
+
+]
+java:S1220""Move this file to a named package.8èˆÈ†ö1J$6271b72a-d129-4860-b615-f974accd8d0b
+¨
+java:S4165"`Remove this useless assignment; "id" already holds the assigned value along all execution paths.(Ý´‚ûúÿÿÿÿ8†‰È†ö1J$26050d54-fc36-4672-9558-85c3d93c9f66
+L	java:S106"+Replace this use of System.out by a logger.(îì¹£øÿÿÿÿ8ØÆ£‡ö1
+w
+java:S1656"/Remove or correct this useless self-assignment.(Ý´‚ûúÿÿÿÿ8Ÿ‰È†ö1J$af43e9ea-ad99-4eac-bb0a-3ce854ffac81
+r
+java:S1068"*Remove this unused "nombre" private field.(µÿï„ùÿÿÿÿ8¡‰È†ö1J$5c0e624c-6172-4645-a65e-666a33c1b674
+j
+java:S1068"'Remove this unused "tel" private field.(°¡Ž¥8¡‰È†ö1J$9c7c4ae9-0ff0-40a4-83b5-41ccdac0d29d
+q
+java:S1068")Remove this unused "email" private field.(ª«Õìùÿÿÿÿ8¢‰È†ö1J$b77fe265-cbdc-4d6e-8bb6-b1af2b4c0728
